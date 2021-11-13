@@ -8,12 +8,12 @@ export const useApi = () => {
     ? 'https://ftmscan.com'
     : 'https://testnet.ftmscan.com';
 
-  const apiUrl = isMainnet
-    ? 'https://api.artion.io'
-    : 'https://api.testnet.artion.io';
+  // const apiUrl = isMainnet
+  //   ? 'https://api.artion.io'
+  //   : 'https://api.testnet.artion.io';
 
   // eslint-disable-next-line no-undef
-  // const apiUrl = process.env.REACT_APP_API_URI;
+  const apiUrl = process.env.REACT_APP_API_URI;
   const storageUrl = isMainnet
     ? 'https://storage.artion.io'
     : 'https://storage.testnet.artion.io';

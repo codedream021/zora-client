@@ -100,10 +100,10 @@ const App = () => {
           <ProtectedRoute exact path="/create" component={PaintBoard} />
           {/* <Route path="/bundle/:bundleID" component={NFTItem} /> */}
           <Route path="/account/:uid" component={AccountDetails} />
-          {/* <ProtectedRoute
+          <ProtectedRoute
             path="/collection/create"
             component={() => <CollectionCreate isRegister={false} />}
-          /> */}
+          />
           <ProtectedRoute
             path="/collection/register"
             component={() => <CollectionCreate isRegister />}
