@@ -14,7 +14,9 @@ const RPC = isMainnet
       [ChainId.FANTOM]: 'https://rpc.ftm.tools',
     }
   : {
-      [ChainId.FANTOM_TESTNET]: 'https://rpc.testnet.fantom.network',
+      // [ChainId.FANTOM_TESTNET]: 'https://rpc.testnet.fantom.network',
+      [ChainId.KOVAN]:
+        'https://kovan.infura.io/v3/22d470f315a24a399611a4dc05301973',
     };
 
 export const network = new NetworkConnector({
@@ -28,7 +30,8 @@ export const injected = new InjectedConnector({
         250, // fantom
       ]
     : [
-        4002, // fantom testnet
+        // 4002, // fantom testnet
+        42,
       ],
 });
 

@@ -48,7 +48,7 @@ export const Contracts = {
     artFactory: '0x56Dd3039FBbc3f84F7Ca17AD2A41B004816B5436', //FantomArtFactory
     privateArtFactory: '0x1FcBE8523806e2AB02703C5CA7Aa503046E054Bc', //FantomArtFactoryPrivate
   },
-  [ChainId.KOVAN]:{
+  [ChainId.KOVAN]: {
     auction: '0x7523f5FBE540FAb456eB1712cfdA949894f0DEe4',
     sales: '0x5cFFEa91d0e19E36a6756FDa4D3173742cBa207b',
     bundleSales: '0xA8086941a6154B12760244D0BEea60A961Ace003',
