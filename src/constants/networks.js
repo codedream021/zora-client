@@ -48,4 +48,13 @@ export const Contracts = {
     artFactory: '0x56Dd3039FBbc3f84F7Ca17AD2A41B004816B5436', //FantomArtFactory
     privateArtFactory: '0x1FcBE8523806e2AB02703C5CA7Aa503046E054Bc', //FantomArtFactoryPrivate
   },
+  [ChainId.KOVAN]:{
+    auction: '0x7523f5FBE540FAb456eB1712cfdA949894f0DEe4',
+    sales: '0x5cFFEa91d0e19E36a6756FDa4D3173742cBa207b',
+    bundleSales: '0xA8086941a6154B12760244D0BEea60A961Ace003',
+    factory: '0x2D9fABDA8e7f6aDF40a7cb6fA1Fb49B64f4AD89C', //FantomNFTFactory
+    privateFactory: '0xaE404fAf67E75479EB2afF3908D1277Ac608Ef96', //FantomNFTFactoryPrivate
+    artFactory: '0x448e7412946E2A71f611032B33ce90F40ACe1622', //FantomArtFactory
+    privateArtFactory: '0xb21242f9d8096eA014aE2F975e02341ce981cE7d', //FantomArtFactoryPrivate
+  },
 };
