@@ -47,7 +47,7 @@ const Tokens = {
       icon: iconDAI,
     },
   ],
-  [ChainId.FANTOM_TESTNET]: [
+  [ChainId.KOVAN]: [
     // {
     //   address: '',
     //   name: 'Fantom',
@@ -66,7 +66,7 @@ const Tokens = {
 };
 
 export default function useTokens() {
-  const chain = isMainnet ? ChainId.FANTOM : ChainId.FANTOM_TESTNET;
+  const chain = isMainnet ? ChainId.FANTOM : ChainId.KOVAN;
 
   const tokens = Tokens[chain];
 

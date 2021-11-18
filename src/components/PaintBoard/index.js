@@ -219,7 +219,7 @@ const PaintBoard = () => {
       showToast('info', 'Connect your wallet first');
       return;
     }
-    if (chainId !== ChainId.FANTOM && chainId !== ChainId.FANTOM_TESTNET) {
+    if (chainId !== ChainId.FANTOM && chainId !== ChainId.KOVAN) {
       showToast('info', 'You are not connected to Fantom Opera Network');
       return;
     }

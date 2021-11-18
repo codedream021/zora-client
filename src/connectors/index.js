@@ -14,7 +14,7 @@ const RPC = isMainnet
       [ChainId.FANTOM]: 'https://rpc.ftm.tools',
     }
   : {
-      // [ChainId.FANTOM_TESTNET]: 'https://rpc.testnet.fantom.network',
+      // [ChainId.KOVAN]: 'https://rpc.testnet.fantom.network',
       [ChainId.KOVAN]:
         'https://kovan.infura.io/v3/22d470f315a24a399611a4dc05301973',
     };

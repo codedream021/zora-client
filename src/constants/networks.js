@@ -7,7 +7,7 @@ export const NETWORK_LABEL = {
   [ChainId.GÖRLI]: 'Görli',
   [ChainId.KOVAN]: 'Kovan',
   [ChainId.FANTOM]: 'Fantom',
-  [ChainId.FANTOM_TESTNET]: 'Fantom Testnet',
+  [ChainId.KOVAN]: 'Fantom Testnet',
   [ChainId.MATIC]: 'Matic',
   [ChainId.MATIC_TESTNET]: 'Matic Testnet',
   [ChainId.XDAI]: 'xDai',
@@ -32,7 +32,7 @@ export const Contracts = {
     artFactory: '0x520DaB621f93F59d3557174280AB1B6d4FB8c956', //FantomArtFactory
     privateArtFactory: '0x736Eae40AdFf88570b92378c97a0D11b44E1C953', //FantomArtFactoryPrivate
   },
-  [ChainId.FANTOM_TESTNET]: {
+  [ChainId.KOVAN]: {
     // auction: '0x19dC382b09Bb7f733a633aDa70af89f7C16F4f68',
     // sales: '0xc6a29aFa00B668De4a11897b627F3011842A8948',
     // bundleSales: '0x9C3682631Cf77aD54461e434819c444D427Ce429',

@@ -57,7 +57,7 @@ const App = () => {
         const _price = await oracle.latestAnswer();
         const price = parseFloat(_price.toString()) / 10 ** 8;
         dispatch(PriceActions.updatePrice(price));
-      } else if (chainId === ChainId.FANTOM_TESTNET) {
+      } else if (chainId === ChainId.KOVAN) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const oracle = new ethers.Contract(
           '0xe04676B9A9A2973BCb0D1478b5E1E9098BBB7f3D',
