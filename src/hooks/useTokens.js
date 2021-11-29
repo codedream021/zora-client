@@ -56,9 +56,9 @@ const Tokens = {
     //   icon: iconFTM,
     // },
     {
-      address: '0xf1277d1ed8ad466beddf92ef448a132661956621',
-      name: 'Wrapped Fantom',
-      symbol: 'WFTM',
+      address: '0x2d3d8878229419F5A1486C772021D020e6FF7Ed7',
+      name: 'Wrapped Token',
+      symbol: 'wTKN',
       decimals: 18,
       icon: iconWFTM,
     },
