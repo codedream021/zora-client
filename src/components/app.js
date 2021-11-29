@@ -60,7 +60,7 @@ const App = () => {
       } else if (chainId === ChainId.KOVAN) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const oracle = new ethers.Contract(
-          '0xe04676B9A9A2973BCb0D1478b5E1E9098BBB7f3D',
+          '0x9326BFA02ADD2366b30bacB125260Af641031331',
           [
             {
               inputs: [],
