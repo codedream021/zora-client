@@ -1774,9 +1774,13 @@ const NFTItem = () => {
         await tx.wait();
       } else {
         const erc20 = await getERC20Contract(listing.token.address);
-        const balance = await erc20.balanceOf(account);
+        const balanceEthers = await erc20.balanceOf(account);
         const price = ethers.utils.parseUnits(
           _price.toString(),
+          listing.token.decimals
+        );
+        const balance = ethers.utils.parseUnits(
+          balanceEthers.toString(),
           listing.token.decimals
         );
         if (balance.lt(price)) {
@@ -1837,7 +1841,11 @@ const NFTItem = () => {
         await tx.wait();
       } else {
         const erc20 = await getERC20Contract(token.address);
-        const balance = await erc20.balanceOf(account);
+        const balanceEthers = await erc20.balanceOf(account);
+        const balance = ethers.utils.parseUnits(
+          balanceEthers.toString(),
+          token.decimals
+        );
         if (balance.lt(price)) {
           const toastId = showToast(
             'error',
@@ -1886,8 +1894,14 @@ const NFTItem = () => {
       const deadline = Math.floor(endTime.getTime() / 1000);
       const amount = price.mul(quantity);
 
+      // eslint-disable-next-line no-debugger
+      debugger;
       const erc20 = await getERC20Contract(token.address);
-      const balance = await erc20.balanceOf(account);
+      const balanceEthers = await erc20.balanceOf(account);
+      const balance = ethers.utils.parseUnits(
+        balanceEthers.toString(),
+        token.decimals
+      );
 
       if (balance.lt(amount)) {
         const toastId = showToast(
@@ -2142,7 +2156,11 @@ const NFTItem = () => {
       const price = ethers.utils.parseUnits(_price, token.decimals);
       if (token.address !== '') {
         const erc20 = await getERC20Contract(token.address);
-        const balance = await erc20.balanceOf(account);
+        const balanceEthers = await erc20.balanceOf(account);
+        const balance = ethers.utils.parseUnits(
+          balanceEthers.toString(),
+          token.decimals
+        );
         if (balance.lt(price)) {
           const toastId = showToast(
             'error',
